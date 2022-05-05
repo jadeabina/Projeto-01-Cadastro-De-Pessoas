@@ -1,12 +1,12 @@
 package br.com.projeto01.jade;
 
-import java.security.Principal;
 import java.util.Date;
 
 public class Pessoa {
 
+
     private String nome;
-    private int cpf;
+    private long cpf;
     private Date nascimento;
     private int id;
 
@@ -19,11 +19,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public int getCpf() {
+    public long getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(long cpf) {
         this.cpf = cpf;
     }
 
