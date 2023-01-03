@@ -2,7 +2,6 @@ package br.com.projeto01.jade;
 
 import java.sql.DriverManager;
 import java.sql.Connection;
-import java.sql.Statement;
 
 public class Conexao {
 
@@ -19,18 +18,18 @@ public class Conexao {
 	private Connection con;
 
 
-		//COSTRUTOR
-		Conexao (){
+	//COSTRUTOR
+	Conexao() {
 		url = "jdbc:postgresql://localhost:5432/postgres";
 		usuario = "postgres";
-		senha   = "pandoraealfa2020";
-		
+		senha = "pandoraealfa2020";
+
 		try {
 			Class.forName("org.postgresql.Driver");
-			con = DriverManager.getConnection(url, usuario, senha );
+			con = DriverManager.getConnection(url, usuario, senha);
 			System.out.println("Conexão Realizada com Sucesso!!");
 		} catch (Exception e) {
-			e.printStackTrace();
+			e.printStackTrace( );
 
 
 		}
